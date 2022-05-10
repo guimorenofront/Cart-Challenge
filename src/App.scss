@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ButtonChange{
+  position: fixed;
+  left: 15px;
+  bottom: 10px;
+  width: 170px;
+  height: 60px;
+  border-radius: 7px;
+  border: none;
+  background-color:white;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
+  &:hover{
+    background-color: rgb(182, 182, 182);
+  }
+}
+
+
+@media screen and (max-width:668px){
+  .ButtonChange{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+  &:hover{
+    background: black;
+  }
+  }
+}

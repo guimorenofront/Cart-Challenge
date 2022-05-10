@@ -1,0 +1,49 @@
+.ContainerBox {
+  background-color: white;
+  width: 600px;
+  border-radius: 40px;
+  margin: 65px auto;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+  .Tittle {
+    font-size: 20px;
+    margin: 25px auto;
+  }
+  .DownBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    .Shipping {
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        background-color: rgba(0, 173, 0, 0.563);
+        padding: 10px 15px;
+        margin: 10px auto;
+        border-radius: 25px;
+        color: black;
+      }
+    }
+    .TotalLine {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width:668px) {
+  .ContainerBox {
+    width: 400px;
+    margin-bottom: 85px;
+    .DownBox{
+      .Shipping{
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
